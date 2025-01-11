@@ -30,12 +30,14 @@ constructor(
    const limit = Number(query.limit || 12);
    const skip = (Number(query.page || 1) - 1) * limit
     return await this.productModel.find(queryObject)
+    .populate('owner', '-password')
     .limit(limit)
     .skip(skip);
   }
 
   async findOne(id: string) {
-    return await this.productModel.findOne({_id: id});
+    return await this.productModel.findOne({_id: id})
+    .populate('owner', '-password');
   }
 
   async update(id: string, productDTO: UpdateProductDTO, image: Express.Multer.File) {

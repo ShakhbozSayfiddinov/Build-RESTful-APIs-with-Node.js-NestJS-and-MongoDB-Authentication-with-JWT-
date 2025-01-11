@@ -9,7 +9,7 @@ interface ProductOrder {
 
 export interface Order extends Document {
     owner: User,
-    totalPrice: string,
+    totalPrice: String,
     product: ProductOrder[],
 
 }

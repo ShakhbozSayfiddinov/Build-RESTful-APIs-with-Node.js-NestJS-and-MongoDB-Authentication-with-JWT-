@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { ProductModule } from './product/product.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import {join} from 'path'
+import { OrderModule } from './order/order.module';
 
 
 
@@ -21,7 +22,8 @@ import {join} from 'path'
       rootPath: join(__dirname, "..", 'files')
     }),
     AuthModule,
-    ProductModule
+    ProductModule,
+    OrderModule
   ],
   controllers: [AppController],
   providers: [AppService],
