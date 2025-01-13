@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { RegisterDTO } from '../shared/dto/register-dto';
-import { LoginDTO } from 'src/shared/dto/login-dto';
-import { UserService } from 'src/shared/user.service';
+import { LoginDTO } from './../shared/dto/login-dto';
+import { UserService } from './../shared/user.service';
 import { AuthGuard } from '@nestjs/passport';
 
 

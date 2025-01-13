@@ -6,7 +6,7 @@ import { ValidatePromise } from 'class-validator';
 import { ApiTags } from '@nestjs/swagger';
 import { FileInterceptor} from '@nestjs/platform-express';
 import {diskStorage} from 'multer'
-import { editedFileName } from 'src/utilities/file-helper';
+import { editedFileName } from './../utilities/file-helper';
 import { Express } from 'express';
 import { AuthGuard } from '@nestjs/passport';
 import { QueryProductDTO } from './dto/query-product.dto';

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { UserSchema } from 'src/models/user.schema';
+import { UserSchema } from './../models/user.schema';
 import { UserService } from './user.service';
 import { APP_FILTER } from '@nestjs/core';
 import { HttpExceptionFilter } from './http-exception-filter';
